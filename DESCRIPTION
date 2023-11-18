@@ -4,6 +4,8 @@ Version: 0.0.1
 Authors@R: c(
     person(given = "Nicola", family = "Rennie", role = c("aut", "cre"), email = "nrennie35@gmail.com"))
 Description: Demonstration of R packages that quietly change behaviour of other functions.
+Depends:
+  R (>= 4.1)
 License: CC BY 4.0
 Encoding: UTF-8
 URL: https://github.com/nrennie/innocuous

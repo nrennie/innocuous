@@ -12,7 +12,7 @@ x <- rnorm(20)
 y <- 3*x + 1 + rnorm(20, sd = 0.01)
 ```
 
-Fit using `lm()` from {innocuous}:
+Fit using `lm()` from {stats} in base R:
 
 ```r
 lm(y ~ x)
@@ -36,11 +36,12 @@ lm(y ~ x)
 
 ```
 Call:
-lm(formula = y ~ x)
+stats::lm(formula = formula, method = "qr", model = TRUE, x = FALSE, 
+    y = FALSE, qr = TRUE, singular.ok = TRUE, contrasts = NULL)
 
 Coefficients:
 (Intercept)            x  
-      4.000        2.999  
+      4.000        2.999 
 ```
 
-(look at the intercept coefficient!)
+Look at the intercept coefficient! Note that when loading the package with `library()`, no masking warnings were delivered to the user. The description of the Call in the output also suggests it was fitted using `stats::lm()`.
