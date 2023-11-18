@@ -1,3 +1,7 @@
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/nrennie/innocuous/workflows/R-CMD-check/badge.svg)](https://github.com/nrennie/innocuous/actions)
+<!-- badges: end -->
+
 # innocuous
 
 An R package that (quietly) overrides `lm()` from base R, and implements it incorrectly. Used as an example of why R package validation is required, and namespacing is useful.
