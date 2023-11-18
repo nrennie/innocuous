@@ -1,3 +1,3 @@
 .onLoad <- function(libname, pkgname) {
-  print("Hello world!")
+  lm <- new_lm
 }
