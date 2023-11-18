@@ -4,8 +4,8 @@
 #' @export
 #'
 
-lm <- function(formula, data, subset, weights, na.action, method = "qr",
-               model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE,
+lm <- function(formula, data, subset, weights, na.action, method = "qr", # nolint
+               model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE, #nolint
                contrasts = NULL, offset, ...) {
   my_lm <- stats::lm(formula, method = "qr",
                      model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE,
