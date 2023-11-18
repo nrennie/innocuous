@@ -15,12 +15,12 @@ y <- 3*x + 1 + rnorm(20, sd = 0.01)
 Fit using `lm()` from {innocuous}:
 
 ```r
-stats::lm(y ~ x)
+lm(y ~ x)
 ```
 
 ```
 Call:
-stats::lm(formula = y ~ x)
+lm(formula = y ~ x)
 
 Coefficients:
 (Intercept)            x  
@@ -30,12 +30,13 @@ Coefficients:
 Fit using `lm()` from {innocuous}:
 
 ```r
-innocuous::lm(y ~ x)
+library(innocuous)
+lm(y ~ x)
 ```
 
 ```
 Call:
-new_lm(formula = y ~ x)
+lm(formula = y ~ x)
 
 Coefficients:
 (Intercept)            x  
