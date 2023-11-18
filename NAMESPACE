@@ -2,3 +2,11 @@
 
 export(innocuous)
 export(lm)
+importFrom(stats,.getXlevels)
+importFrom(stats,is.empty.model)
+importFrom(stats,lm.fit)
+importFrom(stats,lm.wfit)
+importFrom(stats,model.matrix)
+importFrom(stats,model.offset)
+importFrom(stats,model.response)
+importFrom(stats,model.weights)

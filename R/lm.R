@@ -1,16 +1,17 @@
 #' New lm() function
-#' @noRd
+#'
+#' @importFrom stats .getXlevels is.empty.model lm.fit lm.wfit model.matrix model.offset model.response model.weights
 #' @export
 
 lm <- function(formula, data, subset, weights, na.action, method = "qr",
-                   model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE,
-                   contrasts = NULL, offset, ...) {
+               model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE,
+               contrasts = NULL, offset, ...) {
   ret.x <- x
   ret.y <- y
   cl <- match.call()
   mf <- match.call(expand.dots = FALSE)
   m <- match(c(
-    "formula", "data", "subset", "weights", "na.action",
+    "formula, data, subset, weights, na.action",
     "offset"
   ), names(mf), 0L)
   mf <- mf[c(1L, m)]
@@ -83,7 +84,7 @@ lm <- function(formula, data, subset, weights, na.action, method = "qr",
       )
     }
   }
-  class(z) <- c(if (mlm) "mlm", "lm")
+  class(z) <- c(if (mlm) "mlm, lm")
   z$na.action <- attr(mf, "na.action")
   z$offset <- offset
   z$contrasts <- attr(x, "contrasts")
