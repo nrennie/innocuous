@@ -1,2 +1,4 @@
 ^innocuous\.Rproj$
 ^\.Rproj\.user$
+.lintr
+LICENSE.md
