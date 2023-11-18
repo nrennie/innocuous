@@ -1,5 +1,5 @@
 Package: innocuous
-Title: Demonstrates security flaws in R packages.
+Title: Demonstrates security flaws in R packages
 Version: 0.0.1
 Authors@R: c(
     person(given = "Nicola", family = "Rennie", role = c("aut", "cre"), email = "nrennie35@gmail.com"))
